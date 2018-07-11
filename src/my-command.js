@@ -1,3 +1,13 @@
 export default function(context) {
-  context.document.showMessage("It's alive 🙌")
+  let document = require('sketch/dom').getSelectedDocument()
+  let page = document.selectedPage
+
+  let artboardsOnPage = page.layers
+
+  let artboardNames = artboardsOnPage.map(layer => layer.name)
+
+  // Toast
+  context.document.showMessage(`🎨: ${artboardNames}`)
+
+
 }

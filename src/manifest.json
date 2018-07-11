@@ -10,7 +10,7 @@
     }
   ],
   "menu": {
-    "title": "flipper",
+    "title": "Flipper",
     "items": [
       "my-command-identifier"
     ]
